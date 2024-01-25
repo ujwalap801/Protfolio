@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" >Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#projects" >Projects</a></li>
+                    <li><a href="#myproject" >MajorProjects</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Ujwala</span> 
+                    <br>Peddaboina</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About section -->
+    <div id="about">
+       <div class="container">
+               <div class="row">
+                <div class="about-col-1">
+                    <img src="BG.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p><i>I am a passionate 4th-year student with a keen interest in web development and software development.
+                        My interest in software development extends beyond MEAN stack, driving me to explore and leverage various technologies to build innovative solutions.
+                         Eager to contribute my skills and continue my journey in the exciting and ever-evolving field of web and software development.
+                    </i>
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages: </span><br>-Java</li>
+                        
+                                <li><span>Web Technologies:</span><br> - Frontend: HTML, CSS, JavaScript <br>
+                                    - Backend: Node.js, Express, EJS, REST API
+                                <br>-React JS,Tailwind CSS</li>         
+                            </ul>
+                        </div>
+
+
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2020-2024 </span><br>B.Tech from Geethanjali College of Engineering and Technology</li>
+                        
+                                <li><span>2018-2020</span><br>Intermediate from Narayana Junior College <br>
+                                             
+                            </ul>
+                        </div>
+                </div>
+               </div>
+       </div>
+    </div>
+
+<!-- My Projects -->
+<div id="projects">
+      <div class="container">
+         <h1 class="sub-title">My Projects</h1>
+         <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Dynamic Dashboard </h2>
+                <p>A versatile and interactive frontend dashboard featuring real-time components for clock, 
+                    calendar, notes and calculator functionalities 
+                    Technologies used : HTML, CSS, and JavaScript to create a user-friendly interface    
+                    with click-to-reveal interactions. </p>
+                    <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-quora"></i>
+                <h2>Quora-inspired post platform :</h2>
+                <p>Developed a platform inspired by Quora, featuring a Restful  API, allows users to 
+                    perform CRUD operations on posts. 
+                    Implemented the use of UUIDs to ensure the uniqueness of each entity, enhancing security 
+                    measures.  </p>
+                    <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-route"></i>
+                <h2>Dynamic Route Implementation with EJS : </h2>
+                <p>Developed a Dynamic routes in a robust Express.js backend, utilizing EJS templating 
+                    for dynamic content rendering . 
+                    Implemented parameterized routes in Node.js , seamlessly integrating dynamic data handling.  </p>
+                    <a href="#">Learn more</a>
+            </div>
+         </div>
+      </div>
+</div>
+
+<!-- portfolio -->
+
+<div id="myproject">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="web.png" >
+                <div class="layer">
+                    <h1>WanderWeb</h1>
+                    <p>WanderWeb is my dynamic web development venture, powered by Node.js, Express, and MongoDB.
+                         The UI underwent a makeover with EJS, enhancing user experience with client-side validation and informative messages. 
+                         Navigation is seamless with a sleek navbar & footer. Proactive error handling, asynchronous magic, and MongoDB middleware ensure a resilient and user-friendly platform.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                 
+            </div>
+
+            <div class="work">
+                <img src="react.png" >
+
+                <div class="layer">
+                    <h1>Weather React Js</h1>
+                    <p>This application, powered by ReactJS and a robust Weather API, offers real-time temperature, humidity, and max/min temperature data. 
+                        The dynamic weather icons not only provide vital information but also add a visually engaging touch.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                   
+            </div>
+
+            <div class="work">
+                <img src="image.jpg" >
+                <div class="layer">
+                    <h1>Social Media App</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium fugiat officiis sunt delectus quaerat reiciendis sed laborum consectetur doloremque 
+                        doloribus totam hic aspernatur tempore nihil, eos aliquam, explicabo, ea magnam?</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+            </div>
+        </div>
+        <a href="#"  class="btn">See more</a>
+    </div>
+</div>
+
+<!-- Contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ujwalap801@gmail.com</p>
+                    <br>
+                   
+                    <br>
+                    <div class="social-icons">
+                         <a href="https://www.linkedin.com/in/ujwala2702/"><i class="fa-brands fa-linkedin"></i> &nbsp; &nbsp;ujwala2702</a>
+
+                    </div>
+                <br>
+                     <div class="social-icons">
+                                <a href="https://github.com/ujwalap801"> <i class="fa-brands fa-github"></i>&nbsp;&nbsp; ujwalap801</a>
+                     </div>
+                    <br>
+                    <!-- <a href="Resume_ujwala.pdf"  download class="btn2"><b>Download Resume</b></a> -->
+                    <a href="Resume_ujwala.pdf" download class="btn2"><b>See Resume</b></a>
+
+
+                </div>
+
+               
+            </div>
+        </div>
+        <footer>
+        <div class="copyright">
+            <p>Copyright 	&#169; Ujwala.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </footer>
+</div>
+<br>
+<br>
+<script src="script.js"></script>
+</body>
+</html>
